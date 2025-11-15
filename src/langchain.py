@@ -11,6 +11,7 @@ from langchain_ollama import OllamaLLM
 import numpy as np
 import skfuzzy as fuzz
 from skfuzzy import control as ctrl
+from neo4j_connection import get_graph
 import os
 
 # Palabras que indican queries dentro del dominio de soporte (pagos, transacciones, proveedores, eventos)
@@ -57,11 +58,8 @@ def load_nlp_models():
 nlp, tokenizer, emo_model = load_nlp_models()
 
 # Neo4j y Ollama LLM
-graph = Neo4jGraph(
-    url="bolt://localhost:7687",
-    username="neo4j",
-    password="admin1234"
-)
+# Neo4j (via fallback connector) y Ollama LLM
+graph = get_graph()
 llm = OllamaLLM(
     model="gpt-oss:20b-cloud",
     base_url="https://ollama.com"

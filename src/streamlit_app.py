@@ -9,7 +9,7 @@ import streamlit as st
 from langchain import generar_respuesta_streamlit
 
 st.set_page_config(page_title="Wevently Chatbot", page_icon=":robot_face:", layout="wide")
-st.title("Asistente Inteligente Wevently")
+st.title("Asistente Inteligente de Wevently")
 
 def save_chat_to_localstorage(chat_history):
     st.session_state['last_saved'] = datetime.datetime.now()
