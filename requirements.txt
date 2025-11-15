@@ -1,0 +1,10 @@
+streamlit
+spacy
+torch
+transformers
+langchain-neo4j
+langchain-ollama
+numpy
+scikit-fuzzy
+python-dotenv
+streamlit-authenticator
