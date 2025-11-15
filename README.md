@@ -12,7 +12,7 @@ wevently-streamlit
 ├── requirements.txt            # Python dependencies for the project
 ├── .streamlit
 │   └── config.toml            # Configuration settings for the Streamlit application
-├── .env.example                # Example environment variables for sensitive information
+├── .env                      # environment variables for ollama and huggingface
 ├── .gitignore                  # Files and directories to be ignored by Git
 ├── tests
 │   └── test_app.py            # Test cases for the Streamlit application
@@ -23,7 +23,7 @@ wevently-streamlit
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/crosaless/wevently-streamlit.git>
    cd wevently-streamlit
    ```
 
@@ -39,7 +39,7 @@ wevently-streamlit
    ```
 
 4. **Set up environment variables:**
-   - Copy `.env.example` to `.env` and fill in the necessary values.
+   - fill the `.env` file with the necessary values.
 
 5. **Run the Streamlit application:**
    ```bash
