@@ -1,0 +1,15 @@
+{
+  "fecha_entrenamiento": "2025-11-16T22:06:28.332231",
+  "mejor_modelo": "RandomForest",
+  "f1_score_cv": 0.9908399091857545,
+  "categorias": [
+    "ConsultaGeneral",
+    "NoRepresentaAlDominio",
+    "ProblemaPago",
+    "ProblemaServicio",
+    "ProblemaTecnico"
+  ],
+  "umbral_ood": 0.1,
+  "num_ejemplos_entrenamiento": 3500,
+  "version": "1.0"
+}

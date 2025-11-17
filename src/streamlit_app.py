@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 sys.path.append(os.path.dirname(__file__))
 import streamlit as st
-from langchain import generar_respuesta_streamlit
+from wevently_langchain import generar_respuesta_streamlit
 
 st.set_page_config(page_title="Wevently Chatbot", page_icon=":robot_face:", layout="wide")
 st.title("Asistente Inteligente de Wevently")

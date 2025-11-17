@@ -1,5 +1,5 @@
 import streamlit as st
-from src.langchain import generar_respuesta_streamlit
+from wevently_langchain import generar_respuesta_streamlit
 
 def test_generar_respuesta_streamlit():
     # Test case 1: Valid input for "Organizador"
